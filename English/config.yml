@@ -30,7 +30,7 @@ firstTimers: -1
 removeVowels: false
 # -----------
 # Allow users to flag words that need to be reviewed. 
-allowReport: false
+allowReport: true
 # -----------
 # Login message to show to player, params: String
 onLoginMessage: This server is monitored for swearing.
@@ -90,7 +90,7 @@ censorRepeating: false
 onFinalWarning: kick
 # -----------
 # Final message to show player, params: String
-onFinalMessage: You have reached the maximum number of warnings.
+onFinalMessage: You have been banned for using vulgar language.
 # -----------
 # Words that are monitored
 #
