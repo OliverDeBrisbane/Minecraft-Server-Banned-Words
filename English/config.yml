@@ -1,0 +1,214 @@
+# NoSwearing
+# -----------
+# Show user upon login the onLoginMessage, params: true | false
+showMessageOnLogin: true
+# -----------
+# Don't censor ops
+ignoreOps: true
+# -----------
+# Check players inventory for items crafted with custom names. Remove caught item, params: true | false
+inventoryCheck: true
+# -----------
+# Queue messages to catch multiline swears, params: true | false
+# Catches:
+# f
+# u
+# c
+# k
+messageQueing: true
+# 
+# The number of messages to keep in the queue, params: integer
+queStack: 10
+# -----------
+# Ban first timers who swear within x number of minutes of their first login, params: integer, -1 disables
+firstTimers: -1
+# -----------
+# Run additional check that removes vowels from offending words to find words like "fck", params: true | false
+# This could potentially cause false-positives depending on your word list. 
+# For example: 'shit' would check additionally check as 'sht', and under advanced mode 'push them' would match unless 
+# 'shit' is in the word list with word boundries '/bshit'
+removeVowels: false
+# -----------
+# Allow users to flag words that need to be reviewed. 
+allowReport: false
+# -----------
+# Login message to show to player, params: String
+onLoginMessage: This server is monitored for swearing.
+# -----------
+# Show warning count on player login, params: true | false
+showWarnings: true
+#
+# Mute Offenders for a number of seconds after having been warned
+# This will cancel player chat messages and tell them that they are muted.
+# 0 disables this feature.
+MuteOffendersTime: 0
+# -----------
+# What to show player on a warning, params: String
+onWarning: is not an allowed word. This is a warning!
+# -----------
+# censor false will hide player message, censor true will mask restricted word params: true | false
+censor: true
+# -----------
+# When censoring, replace resticted word with censorString, params: String
+censorString: 
+- flowers
+# -----------
+# Detect words like @$$, f**k
+# This will enable the allow list
+# /ns allow <word>
+# Allow list makes certain symbol combinations skip validiation (Ex: 0_0)
+symbols: true
+# -----------
+# Set the action for advanced checks. params: warn | none
+# If censor is set to true, string will be censored
+symbolsAction: warn
+# -----------
+# Catch words like 's h i t'.
+advanced: true
+# -----------
+# Do you want to kick users as a warning? params: true | false
+kick: true
+# -----------
+# Warning number to kick, params: integer
+kickOnWarning: 2
+# -----------
+# Instead of kicking, use a custom command
+overrideKick: false
+# Command to use. %name% adds player name to command.
+customCommand: /jail %name% jail
+# -----------
+# Total number of warnings before final action, params: integer
+warnings: 3
+# -----------
+# Disable warnings. Params: true | false
+disableWarnings: false
+# -----------
+# Block 3 or more repeating characters (Ex: ahhhhhh), params: true | false
+censorRepeating: false
+# -----------
+# Final action, params: kick | ban | custom
+onFinalWarning: kick
+# -----------
+# Final message to show player, params: String
+onFinalMessage: You have reached the maximum number of warnings.
+# -----------
+# Words that are monitored
+#
+# /b can be used at the beginning or end of words to denote the border of the word.
+# This prevents words like ass being detected in 'lass' if it is set as /bass. The /b
+# is a regular expression that sets the check to look for words that only start at 'a'
+#
+# /i is used to make it so that the word is not included in removeVowel option.
+# Words like 'hoe' and 'tit' should include the /i since they would result in common letter combinations.
+#
+# The ! command works for words like hello. 'hell!o' will find any word with hell but not o 
+# at the end. I am sure you could use /b in this case as well. Its up to you.
+#
+# The words are in a hashmap so that they can be counted. This is so that you can know the 
+# most used words that are being blocked. 
+Words:
+  bastard: 0
+  blowjob: 0
+  boner: 0
+  /bclit: 0
+  /bdyke: 0
+  fellatio: 0
+  flamer: 0
+  feltch: 0
+  fudgepacker: 0
+  handjob: 0
+  honkey: 0
+  jizz: 0
+  kootch: 0
+  lezzie: 0
+  /bmotha: 0
+  nutsack: 0
+  pecker: 0
+  prick: 0
+  queef: 0
+  rimjob: 0
+  scrot: 0
+  skank: 0
+  splooge: 0
+  testicle: 0
+  jayjay: 0
+  vagina: 0
+  thong: 0
+  schlong: 0
+  masterbate: 0
+  shlong: 0
+  horny: 0
+  marajuana: 0
+  /icock: 0
+  /blsd/b: 0
+  marijuana: 0
+  /bpcp/b: 0
+  cocaine: 0
+  /ikike: 0
+  /ishiat/b: 0
+  /ishait/b: 0
+  queer: 0
+  /i/bdouche: 0
+  heroin: 0
+  /i/bwank: 0
+  skeet: 0
+  pussy: 0
+  /islut: 0
+  /bnigg: 0
+  /b/isex/b: 0
+  /blesbo: 0
+  /i/bhomo: 0
+  basturd: 0
+  hitler: 0
+  /idouch: 0
+  asshole/b: 0
+  /barse: 0
+  /ifuk/b: 0
+  sht/b: 0
+  /basshole: 0
+  /ikooch: 0
+  /i/bfing: 0
+  /b/ifing: 0
+  /i/bfu/b: 0
+  /bwth: 0
+  /bjerk: 0
+  /i/bpiss: 0
+  /i/btit/b: 0
+  /i/bfook: 0
+  /i/banus: 0
+  /bshiz: 0
+  /ishit/b: 0
+  bullshit: 0
+  /bdick: 0
+  whore: 0
+  niglet: 0
+  /bhump: 0
+  /i/bf4ggot: 0
+  bitch: 0
+  hell!o: 0
+  nazi: 0
+  /i/bboob: 0
+  cunt: 0
+  /bwtf/b: 0
+  /i/brape: 0
+  /i/bfuq: 0
+  /b/iass: 0
+  penis: 0
+  /i/bgay: 0
+  fuck: 0
+  damn: 0
+  /bshit: 0
+#
+# Words flagged by users for review.
+#
+ReportedWords: {}
+#
+# Words containing symbols to be allowed.
+#
+Allow:
+- o_o
+#
+# Users that are exempt from warnings
+# Text is still censored the wame as any other user.
+#
+noWarn: []
