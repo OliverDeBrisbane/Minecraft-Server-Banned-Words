@@ -1,0 +1,52 @@
+name: NoSwearing256
+main: NoSwearing.NoSwearing
+description: Plugin to prevent innappropriate chat, signs, and nicknames
+version: 1.0.0.15
+website: http://www.graphicport.net
+author: Scott Merryfield
+
+commands:
+  ns:
+   description: View how many warnings you have, view plugin info.
+   usage: /ns warnings, ns info
+  ns.warnings:
+   description: View how many warnings you have
+   usage: /ns warnings
+  ns.info:
+   description: View plugin info.
+   usage: /ns info
+  ns.add:
+   description: Add a new word to the list
+   usage: /ns add <word>
+  ns.delete:
+   description: Add a new word to the list
+   usage: /ns add <word>
+  ns.clear:
+   description: Clear an online users warn count
+   usage: /ns clear <user>
+  ns.report:
+   description: Report the last word that was caught
+   usage: /ns report
+  ns.review:
+   description: Review words that users have flagged
+   usage: /ns review
+  ns.remove:
+   description: Remove request of word that user flagged
+   usage: /ns remove
+  ns.removeall:
+   description: Remove all requests by players to review words.
+   usage: /ns removeall
+   
+permissions:
+  ns.add:
+    default: op
+    description: Give players with op everything by default
+  ns.delete:
+    default: op
+    description: Give players with op everything by default
+  ns.clear:
+    default: op
+    description: Clear an online users warn count
+  ns.see:
+    default: op
+    description: See the offending word
