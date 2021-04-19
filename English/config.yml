@@ -135,6 +135,13 @@ Words:
   schlong: 0
   masterbate: 0
   shlong: 0
+  nigger: 0
+  nigga: 0
+  i/hoe: 0
+  motherfucker: 0
+  i/tit: 0
+  i/titties: 0
+  i/tity: 0
   horny: 0
   marajuana: 0
   /icock: 0
@@ -204,6 +211,11 @@ ReportedWords: {}
 #
 Allow:
 - o_o
+- :)
+- :(
+- ( ͡° ͜ʖ ͡°)
+- :-)
+- :-(
 #
 # Users that are exempt from warnings
 # Text is still censored the wame as any other user.
